@@ -1,0 +1,36 @@
+{
+    "name": "infobank/infobank-omni-api-php-sdk",
+    "description": "인포뱅크 Omni Api 발송을 위한 php5.x SDK 입니다.",
+    "authors": [
+        {
+            "name": "Infobank",
+            "email": "msgplatform@infobank.net"
+        }
+    ],
+    "config": {
+        "optimize-autoloader": true
+    },
+    "require": {
+        "netresearch/jsonmapper": "^1.2.0",
+        "composer/composer": "^2.2",
+        "monolog/monolog": "^1.27"
+    },    
+    "require-dev": {
+        "phpunit/phpunit": "^4.8"
+    },
+    "replace": {
+        "symfony/debug": "*",
+        "phpunit/php-token-stream":"*",
+        "phpunit/phpunit-mock-objects":"*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Infobank\\": "Infobank/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}
